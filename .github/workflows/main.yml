@@ -2,15 +2,17 @@
 name: calculate PR size
 
 on:
-  pull_request:
-    branches:
-      - main
+  workflow_dispatch:
+  # pull_request:
+  #   branches:
+  #     - main
 jobs:
   cal_size:                                                                                            
-    runs_on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       - name: print echo command
+        run: echo "Hello World"
         
     
     
