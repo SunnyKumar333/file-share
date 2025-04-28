@@ -2,8 +2,9 @@
 name: calculate PR size
 
 on:
-  workflow_dispatch:
   pull_request:
+  workflow_dispatch:
+  
   #   branches:
   #     - main
 jobs:
