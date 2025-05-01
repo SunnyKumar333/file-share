@@ -1,4 +1,4 @@
 this repo consist a basic flask app to share video file in the same network.
-added feat1
-added faet2
-added feat 3
+added featue for all type of file.
+added feature for file request
+

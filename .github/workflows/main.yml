@@ -1,0 +1,20 @@
+---
+name: calculate PR size
+
+on:
+  pull_request:
+  workflow_dispatch:
+  
+  #   branches:
+  #     - main
+jobs:
+  cal_size:                                                                                            
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: print echo command
+        run: echo "{{ github.event.pull_request.head.sha }}"
+        
+    
+    
+      
