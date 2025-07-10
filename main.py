@@ -11,7 +11,7 @@ def home():
     files=os.listdir(PATH)
     return render_template("index.html",files=files)
 
-@app.get("/download/<file_name>")  
+@app.get("/download/<file_name>")#new comment 
 def download_file(file_name):
     path=rf"{PATH}\{file_name}"
     return send_file(path,as_attachment=False,mimetype='video/mp4')
